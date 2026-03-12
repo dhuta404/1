@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #F5F0E8;
+  --teal: #5BC4C0;
+  --teal-dark: #3DA8A4;
+  --border: #D8D0C4;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Cork board texture */
+.cork-bg {
+  background-color: #C8956C;
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(180,120,60,0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(140,90,40,0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(200,150,80,0.2) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23C8956C'/%3E%3Ccircle cx='1' cy='1' r='0.5' fill='%23B07A4A' opacity='0.5'/%3E%3Ccircle cx='3' cy='3' r='0.4' fill='%23A06A3A' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* Sticky note shadow */
+.sticky-shadow {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.25), 1px 1px 4px rgba(0,0,0,0.15);
+}
+
+/* Input focus ring */
+input:focus {
+  outline: none;
+  border-color: var(--teal) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
